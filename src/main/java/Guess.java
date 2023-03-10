@@ -9,18 +9,18 @@ public class Guess {
 
         Scanner scan = new Scanner(System.in);
         int userNumber;
-        for (int i = maxAttempts; i>0; i--) {
+        for (int i = maxAttempts; i > 0; i--) {
             userNumber = scan.nextInt();
-            if (i == 1 &&  userNumber != number) {
+            if (i == 1 && userNumber != number) {
                 System.out.println("Ты не угадал");
                 break;
             } else if (userNumber == number) {
-                System.out.println("Ты угадал с " + (maxAttempts+1-i) + " попытки!");
+                System.out.println("Ты угадал с " + (maxAttempts + 1 - i) + " попытки!");
                 break;
             } else if (userNumber < number) {
-                System.out.println("Моё число больше! Осталось " + (i-1) + " попыток");
+                System.out.println("Моё число больше! Осталось " + (i - 1) + " попыток");
             } else if (userNumber > number) {
-                System.out.println("Моё число меньше! Осталось " + (i-1) + " попыток");
+                System.out.println("Моё число меньше! Осталось " + (i - 1) + " попыток");
             }
         }
     }
