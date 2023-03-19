@@ -10,7 +10,7 @@ public class PasswordValidatorImpl {
          * не совсем понятно является ли отсутствие символов в логине/пароле ошибкой
          * реализовал вариант что не является, в ином случае можно заменить [a-zA-Z1-9_]* на [a-zA-Z1-9_]+
          */
-        Pattern pattern = Pattern.compile( "[a-zA-Z1-9_]*" );
+        Pattern pattern = Pattern.compile("[a-zA-Z1-9_]*");
         Matcher matchLogin = pattern.matcher(login);
         Matcher matchPassword = pattern.matcher(password);
 

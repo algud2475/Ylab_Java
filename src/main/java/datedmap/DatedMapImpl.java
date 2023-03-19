@@ -14,8 +14,8 @@ public class DatedMapImpl implements DatedMap {
     }
 
     public void put(String key, String value) {
-        keyValueMap.put(key,value);
-        keyDateMap.put(key,new Date());
+        keyValueMap.put(key, value);
+        keyDateMap.put(key, new Date());
     }
 
     public String get(String key) {

@@ -2,7 +2,7 @@ package transliterator;
 
 public class TransliteratorImpl implements Transliterator {
     private String changeString(String letter) {
-        switch(letter) {
+        switch (letter) {
             case "А":
                 return "A";
             case "Б":
