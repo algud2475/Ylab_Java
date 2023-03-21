@@ -7,7 +7,7 @@ public class Utils {
     public static final int BUFFER_SIZE = 50000000;
     public static final int MAX_ARRAY_SIZE = 10;
     //Возможно применение динамического размера массива с приблизительным вычислением в зависимости от ресурсов JVM
-    //public static final int MAX_ARRAY_SIZE = getMaxArrayMemory()/2;
+    //public static final int MAX_ARRAY_SIZE = getMaxArrayMemory()/4;
     public static String inputFileName = "inputFile.txt";
     public static String outputFileName = "outputFile.txt";
     public static String tmpDirName = "tmp/";
