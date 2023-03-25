@@ -60,15 +60,15 @@ public class MovieLoaderImpl implements MovieLoader {
         try (Connection connection = dataSource.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
             for (Movie movie : movies) {
-                setValue(preparedStatement,1, movie.getYear());
-                setValue(preparedStatement,2, movie.getLength());
-                setValue(preparedStatement,3, movie.getTitle());
-                setValue(preparedStatement,4, movie.getSubject());
-                setValue(preparedStatement,5, movie.getActors());
-                setValue(preparedStatement,6, movie.getActress());
-                setValue(preparedStatement,7, movie.getDirector());
-                setValue(preparedStatement,8, movie.getYear());
-                setValue(preparedStatement,9, movie.getAwards());
+                setValue(preparedStatement, 1, movie.getYear());
+                setValue(preparedStatement, 2, movie.getLength());
+                setValue(preparedStatement, 3, movie.getTitle());
+                setValue(preparedStatement, 4, movie.getSubject());
+                setValue(preparedStatement, 5, movie.getActors());
+                setValue(preparedStatement, 6, movie.getActress());
+                setValue(preparedStatement, 7, movie.getDirector());
+                setValue(preparedStatement, 8, movie.getYear());
+                setValue(preparedStatement, 9, movie.getAwards());
                 preparedStatement.executeUpdate();
             }
         }
