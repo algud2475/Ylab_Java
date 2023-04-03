@@ -12,7 +12,7 @@ public class MessageFilter {
         String[] temp = input.split("[ .,;?!$]");
         String output = input;
         for (String word : temp) {
-            if (word.length() > 3 && dbClient.checkWord(word)) {
+            if (dbClient.checkWord(word)) {
                 output = output.replaceAll(word, fixWord(word));
             }
         }
